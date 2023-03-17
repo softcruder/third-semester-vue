@@ -1,23 +1,19 @@
 # third-exam-vue
-
+Softcruder's AltSchool Africa Third Semester Exam
 ## Project setup
+Project was built with VueJS
+
 ```
-npm install
+npm install @vue/cli
+```
+
+```
+vue create project-name
 ```
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
