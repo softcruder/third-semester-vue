@@ -13,7 +13,6 @@
     "vue": "^3.2.13",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.1.6",
-    "vue-tailwind": "^2.5.1",
     "vuejs-paginate": "^2.1.0"
   },
   "devDependencies": {
