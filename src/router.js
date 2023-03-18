@@ -9,11 +9,7 @@ const routes = [
     path: "/",
     name: "HomePage",
     component: HomePage,
-  },
-  {
-    path: "/home",
-    name: "HomePage",
-    component: HomePage,
+    alias: ["/home"],
   },
   {
     path: "/repositories",
