@@ -21,9 +21,13 @@ const routes = [
     component: RepositoryDetails,
   },
   {
-    path: "/:catchAll(.*)",
+    path: "/404",
     name: "NotFound",
     component: NotFound,
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/404",
   },
 ];
 
