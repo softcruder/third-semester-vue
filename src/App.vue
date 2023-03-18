@@ -58,6 +58,14 @@ main {
   padding: 1rem;
 }
 
+button{
+    background: linear-gradient(90deg, hsl(153,48%,49%) 3%,  hsl(211,28%,29%) 134%);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+}
+
 footer {
   background-color: #24292e;
   color: white;
