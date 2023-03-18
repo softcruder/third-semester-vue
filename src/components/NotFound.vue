@@ -15,7 +15,7 @@
   <style scoped>
   .not-found {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     flex-direction: column;
     gap: 2rem;
     align-items: center;

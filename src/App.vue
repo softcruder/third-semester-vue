@@ -52,6 +52,12 @@ nav a:active{
   border-bottom: 2px solid hsl(153,48%,49%);
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
 main {
   max-width: 90%;
   margin: 0 auto;

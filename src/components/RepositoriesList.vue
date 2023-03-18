@@ -79,16 +79,20 @@ export default {
  span a {
   color: hsl(211, 28%, 29%);
 }
-
+a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
 .card {
   flex: 1 1 40%;
   margin-bottom: 1.25rem;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .card:hover {
@@ -128,7 +132,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px;
   height: 100%;
 }
 
