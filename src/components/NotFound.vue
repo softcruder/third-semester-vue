@@ -22,7 +22,7 @@
   }
 
   button{
-    background: linear-gradient(90deg, hsl(37, 100%, 51%) 3%, hsl(37, 93%, 34%) 134%);
+    background: linear-gradient(90deg, hsl(153,48%,49%) 3%,  hsl(211,28%,29%) 134%);
     color: #fff;
     border: none;
     border-radius: .5rem;

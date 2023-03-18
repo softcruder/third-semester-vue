@@ -26,10 +26,10 @@
   margin: auto;
 }
 nav {
-  padding: .5rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid #0a0c0e;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 img {
@@ -38,17 +38,22 @@ img {
 }
 
 nav a {
-  color: hsl(37, 100%, 51%);
+  color:  hsl(211,28%,29%);
+  font-weight: 600;
   text-decoration: none;
   padding: 1rem;
 }
 
 nav a:hover {
-  border-radius: 1px solid #e29b00;
+  border-bottom: 2px solid hsl(153,48%,49%);
+}
+
+nav a:active{
+  border-bottom: 2px solid hsl(153,48%,49%);
 }
 
 main {
-  max-width: 800px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 1rem;
 }

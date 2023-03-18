@@ -37,7 +37,7 @@ export default {
   methods: {
     async getRepository() {
       const response = await axios.get(
-        `https://api.github.com/repos/makydebbie/${this.$route.params.name}`
+        `https://api.github.com/repos/softcruder/${this.$route.params.name}`
       );
       this.repository = response.data;
     },
