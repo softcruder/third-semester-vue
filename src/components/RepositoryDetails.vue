@@ -1,26 +1,43 @@
 <template>
   <div class="repo-details">
-    <h1>{{ repo.name }}</h1>
-    <p>{{ repo.description }}</p>
-    <span>{{ repo.owner.avatar }}</span>
+    <h1>{{ repository.name }}</h1>
+    <p>{{ repository.description }}</p>
+    <!-- <p>
+      <strong>Owner:</strong> {{ repository.owner.login }}
+    </p> -->
     <p>
-      <strong>Language:</strong> {{ repo.language }}
+      <strong>Language:</strong> {{ repository.language }}
     </p>
     <p>
-      <strong>Stars:</strong> {{ repo.stargazers_count }}
+      <strong>Stars:</strong> {{ repository.stargazers_count }}
     </p>
     <p>
-      <strong>Created at:</strong> {{ repo.created_at }}
+      <strong>Forks:</strong> {{ repository.forks_count }}
     </p>
     <p>
-      <strong>Last updated:</strong> {{ repo.updated_at }}
+      <strong>Watchers:</strong> {{ repository.watchers_count }}
     </p>
     <p>
-      <strong>URL:</strong> <a target="_blank" :href="repo.html_url">{{ repo.html_url }}</a>
+      <strong>Subscribers:</strong> {{ repository.subscribers_count }}
+    </p>
+    <p>
+      <strong>Created at:</strong> {{ repository.created_at }}
+    </p>
+    <p>
+      <strong>Last updated:</strong> {{ repository.updated_at }}
+    </p>
+    <p>
+      <strong>URL:</strong> <a target="_blank" :href="repository.html_url">{{ repository.html_url }}</a>
+    </p>
+    <p>
+      <strong>Live Site:</strong> <a target="_blank" :href="repository.homepage"><button>Go</button></a>
     </p>
   </div>
+  <div>
+    <router-link to="/repositories"><button>Go Back</button></router-link>
+  </div>
 </template>
-  
+
 <script>
 import axios from "axios";
 
@@ -36,10 +53,15 @@ export default {
   },
   methods: {
     async getRepository() {
-      const response = await axios.get(
-        `https://api.github.com/repos/softcruder/${this.$route.params.name}`
-      );
-      this.repository = response.data;
+      try {
+        const response = await axios.get(
+          `https://api.github.com/repos/softcruder/${this.$route.params.name}`
+        );
+        console.log("Response:", response);
+        this.repository = response.data;
+      } catch (error) {
+        console.error("Error:", error);
+      }
     },
   },
 };
@@ -54,6 +76,10 @@ export default {
 
 .repo-details h1 {
   margin-top: 0;
+}
+
+a {
+  color: black;
 }
 </style>
   
