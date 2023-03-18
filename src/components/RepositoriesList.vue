@@ -102,7 +102,6 @@ a{
 .card-img-top {
   height: 250px;
   object-fit: cover;
-  border-radius: 40%;
   padding-left: .5rem;
   padding-top: .5rem;
 }
@@ -134,6 +133,7 @@ p {
   justify-content: space-between;
   padding: 5px;
   height: 100%;
+  flex-wrap: wrap;
 }
 
 .card-text {
@@ -151,7 +151,7 @@ p {
   color: #fff;
   background-color: hsl(153, 48%, 49%);
   border-radius: 1.2rem;
-  padding: 10px 20px;
+  padding: .25rem .5rem;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
 }
